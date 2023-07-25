@@ -1,0 +1,57 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- Google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <!-- Mobile app src -->
+       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+       <link rel="manifest" href="/site.webmanifest">
+       <title>Jimmy's Dinner</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Jimmy's Dinner</h1>
+                <p class="under-header">The best burgers and pizzas in town</p>
+            </div>
+            <img src="food-photographer-E94j3rMcxlw-unsplash.jpg" alt="Burger img">
+        </header>
+        <section>
+            <div id="feed">
+                <!-- Feed here -->
+            </div>
+        </section>
+        <section>
+            <div class="summary hidden" id="summary">
+                <h2 class="summary-title">Your order</h2>
+                <div id="order-details">
+                    <!-- Feed here -->
+                </div>
+                <div class="divider-in-summary"></div>
+                <div class="item-list">
+                    <h2>Total price:</h2>
+                    <h2 class="price price-pos" id="total"></h2>
+                </div>
+                <div class="order-btn" id="order-btn">Complete order</div>
+            </div>
+        </setion>
+        <div class="modal" id="modal">
+            <h3 class="modal-title">Enter card details</h3>
+            <form class="modal-form" id="modal-form">
+                <input type="text" placeholder="Card number" id="card-number">
+                <input type="text" placeholder="Name on card" name="card-name" id="card-name" required>
+                <input type="text" placeholder="MM/YY" id="card-expiry">
+                <input type="text" placeholder="CVC" id="card-cvc">
+                <button type="submit" id="pay-btn">Pay</button>
+        </div>
+        <div class="confirmation-msg" id="confirmation-msg">
+            <h4>Thanks, <span id="buyer-name"></span>! Your order is on its way!</h4>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
